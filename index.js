@@ -15,9 +15,8 @@ function once(fn) {
 }
 
 function onceStrict(fn) {
-    var err;
     isFunction(fn);
-    err = 'Function ' + (fn.name || '<anonymous>') + ' can only be called once';
+    const err = 'Function ' + (fn.name || '<anonymous>') + ' can only be called once';
     return function () {
         var ret;
         if (!fn) {
