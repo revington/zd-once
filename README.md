@@ -4,6 +4,11 @@
 # zd-once
 Ensure a function is only called once. Zero deps and simple codebase.
 
+## Install
+```
+$ npm install zd-once
+```
+
 ## Usage 
 
 ```
