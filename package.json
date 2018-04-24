@@ -9,7 +9,7 @@
     },
     "scripts": {
         "test": "node_modules/mocha/bin/_mocha --bail --check-leaks test/",
-        "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks test/"
+        "test-ci": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
     },
     "repository": {
         "type": "git",
@@ -24,6 +24,7 @@
     "homepage": "https://github.com/revington/zd-once#readme",
     "devDependencies": {
         "istanbul": "^0.4.5",
-        "mocha": "^5.1.1"
+        "mocha": "^5.1.1",
+        "mocha-lcov-reporter": "^1.3.0"
     }
 }
