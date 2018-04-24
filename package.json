@@ -1,0 +1,29 @@
+{
+    "name": "zd-once",
+    "version": "1.0.0",
+    "description": "Zero deps, Ensure a function is only called once",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "node_modules/mocha/bin/_mocha --bail --check-leaks test/",
+        "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks test/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/revington/zd-once.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/revington/zd-once/issues"
+    },
+    "homepage": "https://github.com/revington/zd-once#readme",
+    "devDependencies": {
+        "istanbul": "^0.4.5",
+        "mocha": "^5.1.1"
+    }
+}
